@@ -7,9 +7,12 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blogging_system?useSSL=false?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://10.0.1.10:3306/blogging_system?useSSL=false?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: lcd.031121
+
+logging:
+  config: classpath:log4j2-dev.xml
 
 mybatis-plus:
   type-aliases-package: com.bloggingsystem.mode.po

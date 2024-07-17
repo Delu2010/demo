@@ -6,6 +6,7 @@ D:\code\bloggingSystem\src\main\java\com\lcd\bloggingsystem\BloggingSystemApplic
 D:\code\bloggingSystem\src\main\java\com\lcd\bloggingsystem\model\dto\LoginDto.java
 D:\code\bloggingSystem\src\main\java\com\lcd\bloggingsystem\service\impl\UserServiceImpl.java
 D:\code\bloggingSystem\src\main\java\com\lcd\bloggingsystem\controller\ArticleController.java
+D:\code\bloggingSystem\src\main\java\com\lcd\bloggingsystem\config\MybatisPlusConfig.java
 D:\code\bloggingSystem\src\main\java\com\lcd\bloggingsystem\utils\Md5Util.java
 D:\code\bloggingSystem\src\main\java\com\lcd\bloggingsystem\model\vo\Result.java
 D:\code\bloggingSystem\src\main\java\com\lcd\bloggingsystem\controller\UserController.java
