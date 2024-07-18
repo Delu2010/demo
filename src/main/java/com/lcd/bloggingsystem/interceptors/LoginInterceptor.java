@@ -20,7 +20,7 @@ public class LoginInterceptor implements HandlerInterceptor {
         String uri = request.getRequestURI();
 
         if ("GET".equals(method) && (uri.matches("/api/posts") || uri.matches("/api/posts/\\d+"))) {
-            return true;
+            return false;
         }
 
         // 令牌验证
