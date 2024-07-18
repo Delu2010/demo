@@ -6,6 +6,7 @@ import com.lcd.bloggingsystem.model.vo.Result;
 import com.lcd.bloggingsystem.model.po.User;
 import com.lcd.bloggingsystem.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -17,13 +18,13 @@ public class UserController {
 
     // 用户注册
     @PostMapping("/register")
-    public Result register(@RequestBody RegisterDto registerDto) {
+    public Result register(@RequestBody @Validated RegisterDto registerDto) {
         return userService.register(registerDto);
     }
 
     // 用户登录
     @PostMapping("/login")
-    public Result login(@RequestBody LoginDto loginDto) {
+    public Result login(@RequestBody @Validated LoginDto loginDto) {
         return userService.login(loginDto);
     }
 
